@@ -7,7 +7,7 @@ const Alzheimer = () => {
   }, []);
   const fetchProducts = () => {
     axios
-      .get("http://localhost:4000/posts")
+      .get("https://doctor-alzheimer-app2.onrender.com/posts")
       .then((res) => {
         console.log(res);
         setPosts(res.data);
