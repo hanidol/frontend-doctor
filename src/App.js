@@ -19,6 +19,7 @@ import Posts from "./components/posts/Posts";
 import Post from "./components/post/Post";
 import NotFound from "./components/layout/NotFound";
 import PrivateRoute from "./components/routing/PrivateRoute";
+import Data from "./components/posts/Data";
 
 // Redux
 import { Provider } from "react-redux";
@@ -75,6 +76,8 @@ const App = () => {
             path="add-experience"
             element={<PrivateRoute component={AddExperience} />}
           />
+          <Route path="Data" element={<PrivateRoute component={Data} />} />
+
           <Route
             path="add-patient"
             element={<PrivateRoute component={AddPatient} />}
